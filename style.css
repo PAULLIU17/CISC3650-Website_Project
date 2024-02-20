@@ -3,21 +3,34 @@
 }
 
 div {
-    background-color: gray;
+    background-color: black;
 }
 
 body {
     background-color: black;
 }
 
+img {
+    max-width: 320px;
+    max-height: 320px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+button {
+    background-color: black;
+    border: 0px;
+}
+
 #header {
     text-align: center;
     padding: 3%;
-    border: 3px solid white;
+    margin: 3px solid white;
 }
 
 #list {
-    margin-left: 40%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
