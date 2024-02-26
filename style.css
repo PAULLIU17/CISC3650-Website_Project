@@ -1,36 +1,35 @@
 * {
+    box-sizing: border-box;
     color: white;
-}
-
-div {
-    background-color: black;
-}
-
-body {
     background-color: black;
 }
 
 img {
-    max-width: 320px;
-    max-height: 320px;
-    margin-left: 0px;
-    margin-right: 0px;
+    max-width: 32px;
 }
 
-
-button {
-    background-color: black;
-    border: 0px;
-}
-
-#header {
+.header {
+    display: grid;
+    align-items: center;
     text-align: center;
-    padding: 3%;
-    margin: 3px solid white;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-#list {
+input {
+    width: 30%;
     text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
+
+ul li {
+    background-color: darkgrey;
+    color: black;
+    width: 70%;
 }
