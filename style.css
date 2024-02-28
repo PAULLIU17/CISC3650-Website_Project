@@ -1,16 +1,10 @@
-* {
-    box-sizing: border-box;
+body {
     color: white;
     background-color: black;
 }
 
-img {
-    max-width: 32px;
-}
-
-.header {
+div.header {
     display: grid;
-    align-items: center;
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -19,17 +13,41 @@ img {
 input {
     width: 30%;
     text-align: center;
+    font-size: 24px;
+}
+
+img {
+    max-width: 32px;
+    cursor: pointer;
+}
+
+div.listContainer {
+    text-align: center;
+    border: 3px solid white;
+    margin: auto;
+    padding: 32px;
+    width: 70%;
 }
 
 ul {
     margin: 0;
     padding: 0;
-    align-items: center;
-    text-align: center;
 }
 
 ul li {
-    background-color: darkgrey;
+    text-align: left;
+    list-style-type: none;
+    position: relative;
+    margin-left: 32px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+ul li:hover{
+    background-color: white;
     color: black;
-    width: 70%;
+}
+
+ul li.checked {
+    text-decoration: line-through;
 }
