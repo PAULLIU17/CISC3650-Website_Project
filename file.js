@@ -11,13 +11,13 @@ function addNewTask() {
     }
     document.getElementById("input").value = "";
 
-    //prepends all newly made list items with a delete button (red minus vector)
+    //prepends all NEWLY MADE list items with a delete button (red minus vector)
     var img = document.createElement("img");
     img.src = "images/minus_sign.png";
     img.className = "deleteButton";
     newListItem.prepend(img);
 
-    //implements delete task function to all delete buttons
+    //implements delete task function to all delete buttons (red minus vector) for NEWLY MADE list items
     var deleteButton = document.getElementsByClassName("deleteButton");
     var i;
     for (i = 0; i < deleteButton.length; i++) {
@@ -25,5 +25,25 @@ function addNewTask() {
             var div = this.parentElement;
             div.style.display = "none";
         }
+    }
+}
+
+//prepends all STARTING list items with a delete button (red minus vector)
+var startingList = document.getElementsByTagName("li");
+var i;
+for(i = 0; i < startingList.length; i++) {
+    var img = document.createElement("img");
+    img.src = "images/minus_sign.png";
+    img.className = "deleteButton";
+    startingList[i].prepend(img);
+}
+
+//implements delete task function to all delete buttons (red minus vector) in the STARTING list
+var deleteButton = document.getElementsByClassName("deleteButton");
+var i;
+for (i = 0; i < deleteButton.length; i++) {
+    deleteButton[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
     }
 }
