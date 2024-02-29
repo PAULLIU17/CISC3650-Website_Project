@@ -16,6 +16,10 @@ input {
     font-size: 16px;
 }
 
+input:hover {
+    cursor: text;
+}
+
 img {
     cursor: pointer;
     max-width: 28px;
@@ -47,4 +51,9 @@ ul li {
 ul li:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
+}
+
+ul li.clicked {
+    text-decoration: line-through;
 }

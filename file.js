@@ -47,3 +47,11 @@ function addNewTask() {
         }
     }
 }
+
+//strikethrough list items that were clicked on
+var toDoList = document.querySelector("ul");
+toDoList.addEventListener("click", function(ev) {
+    if (ev.target.tagName === "li") {
+        ev.target.classList.toggle('clicked');
+    }   
+});
